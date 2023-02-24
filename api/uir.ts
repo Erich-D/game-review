@@ -1,0 +1,1 @@
+export const ENDPOINT = "https://7469-2600-8800-312c-2000-fdfd-8a5a-2eb-2eb5.ngrok.io/graphql";
