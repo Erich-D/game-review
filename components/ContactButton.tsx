@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, Button, TouchableHighlight,
     TouchableOpacity, TouchableWithoutFeedback, Vibration} from 'react-native';
 
 type contactButtonProps = {
-    id: number
+    id: string
     name: string
     handler:any
 }
@@ -11,7 +11,7 @@ export default function ContactButton(props:contactButtonProps){
 
 
     return <View style={{width:"100%"}}>
-        <TouchableOpacity onPress = {()=>{props.handler(props.name)}}>
+        <TouchableOpacity onPress = {()=>{props.handler(props.id)}}>
             <View style = {styles.touchableView}>
                 <Text style = {styles.touchableText}>{props.name}</Text>
             </View>

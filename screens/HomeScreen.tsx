@@ -29,7 +29,7 @@ export default function HomeScreen({navigation}:Props["home"]) {
                             <Heading txt={item.name} size={24}/>
                             <Heading txt={item.description} size={18}/>
                             <Image style={{width:100,height:100}} source={{uri:item.image}}/>
-                            <ContactButton id={item.itemId} name={'Get Reviews'} handler={getReviews}/>
+                            <ContactButton id={item.name} name={'Get Reviews'} handler={getReviews}/>
                             <Text>{item.name}</Text>
                         </View>
                     )
